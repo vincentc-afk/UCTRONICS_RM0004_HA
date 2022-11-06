@@ -37,7 +37,7 @@ char* get_ip_address(void)
       close(fd);
       if(symbol==0)
       {
-        return inet_ntoa(((struct sockaddr_in *)&ifr.ifr_addr)->sin_addr);
+        return "192.168.1.190"; /*inet_ntoa(((struct sockaddr_in *)&ifr.ifr_addr)->sin_addr);*/
       }
       else
       {
